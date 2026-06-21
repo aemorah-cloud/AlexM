@@ -67,12 +67,13 @@ Key insights from the analysis:
 - Mid-distance races (160–170 km) show highest engagement
 - Non-normal distributions observed in key variables
 
-Visual analysis included:
-- Boxplots
-- Histograms
-- QQ-plots
-- Correlation heatmaps
+One of the first insights was the relationship between race distance, gender, and completion time.
 
+Figure 1 shows the distribution of completion times across different distance categories segmented by gender.
+
+![Figure 1](./img/gender_distance.png)
+
+*Time (s) to complete the race by gender and distance category*
 ---
 
 ## 🧠 Methodology (R Implementation)
@@ -131,15 +132,21 @@ All analyses were performed in **R**, using statistical libraries.
 
 ## 📊 Visualizations
 
-Generated using `ggplot2` and related R libraries:
+To validate assumptions for the independent t-test, the distribution of completion times was analyzed.
 
-- Boxplots (time vs distance vs gender)
-- Correlation heatmaps (`corrplot`)
-- Distribution plots
-- QQ-plots (normality checks)
-- Post-hoc residual analysis (chi-square)
+![Figure 2](./img/time_distribution.png)
 
-📁 Figures available in `/reports/figures`
+Time in Seconds - Distribution*
+
+
+A Spearman correlation was applied due to non-normal distributions and ordinal structure of distance.
+
+The relationship between distance and completion time is shown below:
+
+![Figure 3](./img/spearman.png)
+
+*Figure 3: Visualization of Spearman’s Correlation (ρ)*
+
 
 ---
 
