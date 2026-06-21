@@ -47,8 +47,10 @@ Analyzed traffic datasets to identify congestion patterns, trends, and optimizat
 
 ## Connect With Me
 
-📧 Email: [your.email@example.com](mailto:your.email@example.com)
+📧 Email: [your.email@example.com](mailto:aemorah@gmail.com)
 
-💼 LinkedIn: linkedin.com/in/yourprofile
+💼 LinkedIn: [www.linkedin.com/in/alex-mora-94430785](http://www.linkedin.com/in/alex-mora-94430785)
 
 🌐 Portfolio: yourwebsite.com
+
+
