@@ -136,7 +136,9 @@ To validate assumptions for the independent t-test, the distribution of completi
 
 ![Figure 2](./img/time_distribution.png)
 
-Time in Seconds - Distribution*
+*Time in Seconds - Distribution*
+
+
 
 
 A Spearman correlation was applied due to non-normal distributions and ordinal structure of distance.
