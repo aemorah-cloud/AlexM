@@ -22,21 +22,25 @@ My work spans machine learning, business intelligence, process automation, robot
 
 ## Featured Projects
 
-### Emotion Detection & Sentiment Analysis
+### 🧠 Emotion Detection & Sentiment Analysis
+NLP system using Plutchik’s Wheel of Emotions and Google’s GoEmotions dataset to detect nuanced emotional states beyond simple sentiment classification.
 
-Built an NLP system using Plutchik's Wheel of Emotions and Google's GoEmotions dataset to classify nuanced emotional states and extract meaningful insights from text.
+➡️ [View Project](./emotion-detection-nlp)
 
-### Small ERP System
+### 🌐 IoT-Based Warehouse Monitoring
+Conceptual IoT system simulating real-time warehouse tracking using sensor data flow and system architecture design.
 
-Developed an AppSheet-based ERP solution for inventory management, purchasing, dispatch tracking, and operational workflows.
+➡️ [View Project](./warehouse-iot)
 
-### IoT Warehouse Monitoring
+### 📊 Traffic Pattern Analysis
+Exploratory data analysis on traffic datasets to identify congestion patterns and mobility trends using Python.
 
-Designed a warehouse monitoring system integrating IoT concepts and real-time data collection for operational visibility.
+➡️ [View Project](./traffic-analysis)
 
-### Traffic Data Analysis
+### ⚙️ Small ERP System (AppSheet)
+Low-code ERP system built with AppSheet and Google Sheets for inventory, purchasing, dispatch, and workflow automation.
 
-Analyzed traffic datasets to identify congestion patterns, trends, and optimization opportunities through data science techniques.
+➡️ [View Project](./appsheet-erp)
 
 ## Currently Learning
 
