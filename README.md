@@ -27,14 +27,10 @@ NLP system using Plutchik’s Wheel of Emotions and Google’s GoEmotions datase
 
 ➡️ [View Project](./emotion-detection-nlp)
 
----
-
 ### 🚗 Used Car Price Prediction (Big Data & Machine Learning)
 Big Data project analyzing 3M+ vehicle records to predict used car prices and cluster similar vehicles using machine learning and cloud data platforms.
 
 ➡️ [View Project](./used-car-price-prediction)
-
----
 
 ### 🌐 IoT-Based Warehouse Monitoring
 Conceptual IoT system simulating real-time warehouse tracking using sensor data flow and system architecture design.
