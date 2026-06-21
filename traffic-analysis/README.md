@@ -76,13 +76,18 @@ The project combines Python-based analysis (Pandas, GeoPandas, Seaborn, Folium) 
 - Focus on driver-related errors as dominant cause
 
 ### 👥 Demographic Analysis
-- Age groups most affected by accidents
-- Gender distribution of accident involvement
-- Combined age + gender risk segmentation
+- This analysis identifies the population groups most affected by traffic accidents based on age and gender distribution.
+
+![Grupos Más Afectados](./img/grupos_afectados_edad_genero.png)
 
 ### 🦺 Safety Equipment Impact
-- Comparison of accident severity with/without safety devices
-- Temporal trend of safety usage adoption
+- This visualization shows the evolution of seatbelt and helmet usage across different years.
+
+![Uso de dispositivos de seguridad](./img/uso_dispositivos_seguridad_anual.png)
+
+- This analysis compares accident outcomes (injured/fatal vs uninjured cases) in relation to safety device usage.
+
+![Impacto seguridad - Lesionados y fallecidos](./img/safety_lesionados_fallecidos.png)
 
 ---
 
@@ -108,6 +113,27 @@ An interactive Power BI dashboard was developed to complement the Python analysi
 - Cause distribution
 - Demographic filters (age/gender)
 - Safety equipment impact analysis
+
+### 📍 Siniestros Dashboard
+Overview of total accidents, trends, and general KPIs.
+
+![Siniestros Dashboard](./img/siniestros.png)
+
+### 📊 Accident Analysis Dashboard
+Detailed breakdown of accident patterns, trends, and distributions.
+
+![Analisis Siniestros](./img/analisis_siniestros.png)
+
+### ⚠️ Fatality Dashboard
+Analysis focused on fatalities and severe outcomes.
+
+![Fallecidos Siniestros](./img/fallecidos_siniestros.png)
+
+
+### 🧠 Fatality Deep Analysis
+In-depth exploration of factors contributing to fatal accidents.
+
+![Analisis Fallecidos](./img/analisis_fallecidos.png)
 
 ---
 
