@@ -47,7 +47,7 @@ Statistical analysis of ultra-trail running performance using R to study how age
 ➡️ [View Project](./ultra-trail-stat-analysis)
 
 ### 📊 Traffic Pattern Analysis
-Exploratory data analysis on traffic datasets to identify congestion patterns and mobility trends using Python.
+Exploratory data analysis of traffic accident data in Guayaquil (Ecuador) to identify congestion patterns, high-risk zones, and mobility trends. The project integrates geospatial analysis, statistical summaries, and interactive visualizations to support data-driven road safety insights.
 
 ➡️ [View Project](./traffic-analysis)
 
