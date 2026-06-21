@@ -27,13 +27,17 @@ My work spans machine learning, business intelligence, process automation, robot
 ## Featured Projects
 
 ### 🧠 Emotion Detection & Sentiment Analysis
-NLP system using Plutchik’s Wheel of Emotions and Google’s GoEmotions dataset to detect nuanced emotional states beyond simple sentiment classification.
+Advanced NLP system that leverages Plutchik’s Wheel of Emotions and Google’s GoEmotions dataset to identify complex emotional states in text. The project goes beyond traditional positive, negative, and neutral sentiment analysis by classifying nuanced emotions such as joy, fear, anger, surprise, and trust using machine learning and natural language processing techniques.
 
 ➡️ [View Project](./emotion-detection-nlp)
 
-### 🚗 Used Car Price Prediction (Big Data & Machine Learning)
-Big Data project analyzing 3M+ vehicle records to predict used car prices and cluster similar vehicles using machine learning and cloud data platforms.
+### 📊 Traffic Pattern Analysis
+Exploratory data analysis of traffic accident data in Guayaquil (Ecuador) to identify congestion patterns, high-risk zones, and mobility trends. The project integrates geospatial analysis, statistical summaries, and interactive visualizations to support data-driven road safety insights.
 
+➡️ [View Project](./traffic-analysis)
+
+### 🚗 Used Car Price Prediction (Big Data & Machine Learning)
+End-to-end Big Data and Machine Learning project analyzing over 3 million vehicle records to predict used car prices with high accuracy. The solution combines data engineering, exploratory analysis, feature engineering, predictive modeling, and vehicle clustering to uncover market patterns and support data-driven pricing decisions.
 ➡️ [View Project](./used-car-price-prediction)
 
 ### 🌐 IoT-Based Warehouse Monitoring
@@ -46,15 +50,8 @@ Statistical analysis of ultra-trail running performance using R to study how age
 
 ➡️ [View Project](./ultra-trail-stat-analysis)
 
-### 📊 Traffic Pattern Analysis
-Exploratory data analysis of traffic accident data in Guayaquil (Ecuador) to identify congestion patterns, high-risk zones, and mobility trends. The project integrates geospatial analysis, statistical summaries, and interactive visualizations to support data-driven road safety insights.
 
-➡️ [View Project](./traffic-analysis)
 
-### ⚙️ Small ERP System (AppSheet)
-Low-code ERP system built with AppSheet and Google Sheets for inventory, purchasing, dispatch, and workflow automation.
-
-➡️ [View Project](./appsheet-erp)
 
 ## Currently Learning
 
