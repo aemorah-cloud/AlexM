@@ -182,9 +182,4 @@ Generated using `ggplot2` and related R libraries:
 - Inclusion of environmental conditions (weather, elevation)
 - Expansion to multi-year comparative performance trends
 
----
 
-## 👤 Author
-
-**Alex M.**  
-Data Science & Analytics | Statistical Modeling | R Programming
