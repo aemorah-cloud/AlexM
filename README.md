@@ -38,6 +38,7 @@ Exploratory data analysis of traffic accident data in Guayaquil (Ecuador) to ide
 
 ### 🚗 Used Car Price Prediction (Big Data & Machine Learning)
 End-to-end Big Data and Machine Learning project analyzing over 3 million vehicle records to predict used car prices with high accuracy. The solution combines data engineering, exploratory analysis, feature engineering, predictive modeling, and vehicle clustering to uncover market patterns and support data-driven pricing decisions.
+
 ➡️ [View Project](./used-car-price-prediction)
 
 ### 🌐 IoT-Based Warehouse Monitoring
