@@ -65,7 +65,7 @@ Low-code ERP system built with AppSheet and Google Sheets for inventory, purchas
 
 ## Connect With Me
 
-📧 Email: [your.email@example.com](mailto:your.email@example.com)
+📧 Email: [aemorah@gmail.com](mailto:aemorah@gmail.com)
 
 💼 LinkedIn: [www.linkedin.com/in/alex-mora-94430785](http://www.linkedin.com/in/alex-mora-94430785)
 
