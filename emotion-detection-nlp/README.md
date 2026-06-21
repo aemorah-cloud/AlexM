@@ -59,6 +59,41 @@ The system analyzes real student comments and classifies them into emotional sta
   - Vulnerability (low-frequency label)
 
 ---
+## 📊 Project Results & Visual Insights
+
+
+### ⚙️ Methodology Workflow
+
+This diagram summarizes the full pipeline of the project, from data collection and preprocessing to model training, evaluation, and inference.
+
+![Methodology Workflow](img/Methodology_workflow_final.png)
+
+---
+
+### 🎭 Emotion Definitions (Custom Taxonomy)
+This diagram shows the custom 6-emotion taxonomy designed specifically for academic feedback, combining Plutchik’s Wheel of Emotions and GoEmotions.
+
+![Emotion Definitions](img/Emotions%20Definitions.jpeg)
+
+---
+
+### 🤖 Model Performance Comparison
+
+This table compares the performance of baseline models (Logistic Regression, SVM, CNN) against transformer-based models (BERT, RoBERTa, GE-BERT) using F1-scores.
+
+It highlights how transformer models significantly outperform traditional approaches, especially in context-heavy emotion classes.
+
+![Model Results](img/Models%20Results.jpg)
+
+---
+
+### 📈 Emotion vs Student Rating
+
+This visualization shows how predicted emotions correlate with student ratings. Higher ratings are associated with positive emotions like approval and gratitude, while lower ratings align with disapproval and annoyance.
+
+![Emotion vs Rating](img/Emotions_vs_rating.png)
+
+---
 
 ## 📈 Insights
 
