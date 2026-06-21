@@ -9,12 +9,16 @@ My work spans machine learning, business intelligence, process automation, robot
 ## Technical Skills
 
 * Python
+* R Programming
 * SQL
 * Machine Learning
 * Data Analysis
 * Data Visualization
+* Big Data Processing (Spark, distributed computing concepts)
+* Cloud Computing (AWS, GCP fundamentals)
+* Data Engineering Concepts (ETL pipelines, data modeling)
 * AppSheet
-* Google App Script
+* Google Apps Script
 * Business Intelligence
 * Looker Studio
 * IoT Systems
@@ -36,6 +40,11 @@ Big Data project analyzing 3M+ vehicle records to predict used car prices and cl
 Conceptual IoT system simulating real-time warehouse tracking using sensor data flow and system architecture design.
 
 ➡️ [View Project](./warehouse-iot)
+
+### 🏃‍♂️ Ultra-Trail Running Statistical Analysis (R)
+Statistical analysis of ultra-trail running performance using R to study how age, gender, and race distance influence race completion and finishing times. The project applies hypothesis testing (Chi-Square, t-test) and correlation analysis (Spearman) to extract performance insights from large-scale endurance race data.
+
+➡️ [View Project](./ultra-trail-stat-analysis)
 
 ### 📊 Traffic Pattern Analysis
 Exploratory data analysis on traffic datasets to identify congestion patterns and mobility trends using Python.
