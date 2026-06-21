@@ -92,11 +92,13 @@ Due to dataset size limitations, the following optimizations were applied:
 
 ## 📊 Visual Results
 
-### 📦 Mileage vs Price Distribution
-(Add your boxplot image here)
+### Mileage & Price Boxplots
+![Milage Boxplot](img/Boxplot_Millage_Distribution.png)
 
-### 🔥 Feature Correlation Heatmap
-(Add your heatmap image here)
+![Price Boxplot](img/Boxplot_Price_Distribution.png)
+
+### Feature Correlation Heatmap
+![Features Correlation Heatmap](img/heatmap.png)
 
 ---
 
