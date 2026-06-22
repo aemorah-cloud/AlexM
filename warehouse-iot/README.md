@@ -126,6 +126,71 @@ The system integrates **IoT hardware + cloud software + automation mechanisms** 
 
 ## 📷 System Preview
 
-![System Overview](images/system_overview.png)
-![Hardware Setup](images/hardware_setup.png)
-![App Interface](images/app_interface.png)
+A visual demonstration of the IoT warehouse system, including hardware prototype and software application workflow.
+
+---
+
+### 🧠 Full System Prototype
+
+Overview of the complete IoT system installed on the warehouse door prototype.
+
+![System Prototype](assets/images/system_prototype.jpg)
+
+---
+
+### 🚪 Door Automation System
+
+Linear actuator-based automatic door opening mechanism.
+
+![Door Closed](assets/images/door_closed.jpg)
+![Door Open](assets/images/door_open.jpg)
+
+🖼️ *Shows mechanical transition between closed and open states.*
+
+---
+
+### 🔐 Access Control System
+
+RFID and fingerprint authentication panel used for secure entry.
+
+![Access Panel](assets/images/access_panel.jpg)
+
+---
+
+### 📸 Entry Monitoring (Camera System)
+
+Camera module capturing entry events for traceability.
+
+![Camera Module](assets/images/camera_module.jpg)
+
+---
+
+### 📦 Inventory Management App (GIF Demo)
+
+Real-time QR-based inventory system with automatic stock updates.
+
+![App Demo GIF](assets/gifs/app_demo.gif)
+
+---
+
+### 📊 Inventory Update Flow (GIF)
+
+Shows product scan → validation → stock update in real time.
+
+![Inventory Flow GIF](assets/gifs/inventory_flow.gif)
+
+---
+
+### ☁️ Firebase Real-Time Database
+
+Cloud backend storing logs, inventory, and access records.
+
+![Firebase DB](assets/images/firebase_db.jpg)
+
+---
+
+### 🔔 System Notifications
+
+Automated alerts for access events and stock inconsistencies.
+
+![Notifications](assets/images/notifications.jpg)
