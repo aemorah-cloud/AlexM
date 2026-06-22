@@ -126,71 +126,62 @@ The system integrates **IoT hardware + cloud software + automation mechanisms** 
 
 ## 📷 System Preview
 
-A visual demonstration of the IoT warehouse system, including hardware prototype and software application workflow.
+A visual demonstration of the IoT warehouse access and inventory control system, including hardware prototype, software application, and cloud integration.
 
 ---
 
-### 🧠 Full System Prototype
+### 🧠 System Architecture
 
-Overview of the complete IoT system installed on the warehouse door prototype.
+High-level architecture of the IoT system showing hardware, software, and cloud integration.
 
-![System Prototype](assets/images/system_prototype.jpg)
-
----
-
-### 🚪 Door Automation System
-
-Linear actuator-based automatic door opening mechanism.
-
-![Door Closed](assets/images/door_closed.jpg)
-![Door Open](assets/images/door_open.jpg)
-
-🖼️ *Shows mechanical transition between closed and open states.*
+![System Architecture](assets/images/system_architecture.png)
+![Door Connection](assets/images/door_connection_diagram.png)
 
 ---
 
 ### 🔐 Access Control System
 
-RFID and fingerprint authentication panel used for secure entry.
+RFID and fingerprint-based authentication used for secure warehouse entry.
 
-![Access Panel](assets/images/access_panel.jpg)
-
----
-
-### 📸 Entry Monitoring (Camera System)
-
-Camera module capturing entry events for traceability.
-
-![Camera Module](assets/images/camera_module.jpg)
+![RFID Entry](assets/images/rfid_entry.png)
+![Fingerprint Entry](assets/images/fingerprint_entry.png)
 
 ---
 
-### 📦 Inventory Management App (GIF Demo)
+### 🏗️ Prototype Implementation
 
-Real-time QR-based inventory system with automatic stock updates.
+Physical implementation of the automated warehouse access system.
 
-![App Demo GIF](assets/gifs/app_demo.gif)
-
----
-
-### 📊 Inventory Update Flow (GIF)
-
-Shows product scan → validation → stock update in real time.
-
-![Inventory Flow GIF](assets/gifs/inventory_flow.gif)
+![Prototype Front](assets/images/prototype_front_view.png)
+![Prototype Back](assets/images/prototype_back_view.png)
 
 ---
 
-### ☁️ Firebase Real-Time Database
+### 📦 Inventory Management System (GIF Demo)
 
-Cloud backend storing logs, inventory, and access records.
+QR-based inventory system with real-time stock updates.
 
-![Firebase DB](assets/images/firebase_db.jpg)
+![App Login](assets/images/app_login_screen.png)
+![App Screen](assets/images/app_withdrawal_screen.png)
 
 ---
 
-### 🔔 System Notifications
+### ☁️ Cloud & Database System
 
-Automated alerts for access events and stock inconsistencies.
+The system uses Firebase Realtime Database to enable instant synchronization of warehouse events, inventory updates, and access logs across all connected devices.
 
-![Notifications](assets/images/notifications.jpg)
+A comparison between Firebase and traditional relational databases highlights the advantages of real-time synchronization and scalability in IoT environments.
+
+![Database Comparison](assets/images/database_comparison_firebase_vs_traditional.png)
+
+![Firebase Dashboard](assets/images/firebase_dashboard.png)
+![Realtime Update](assets/images/firebase_realtime_update.png)
+![Logs](assets/images/firebase_logs.png)
+
+---
+
+### 📸 Monitoring & Security System
+
+Automated camera capture and alert system for warehouse entry monitoring.
+
+![Alert Notification](assets/images/entry_alert_notification.png)
