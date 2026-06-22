@@ -139,8 +139,10 @@ A visual demonstration of the IoT warehouse access and inventory control system,
 
 High-level architecture of the IoT system showing hardware, software, and cloud integration.
 
-![System Architecture](assets/images/system_architecture.png)
-![Door Connection](assets/images/door_connection_diagram.png)
+<p align="center">
+  <img src="assets/images/system_architecture.png" width="45%" />
+  <img src="assets/images/door_connection_diagram.png" width="45%" />
+</p>
 
 ---
 
@@ -148,8 +150,10 @@ High-level architecture of the IoT system showing hardware, software, and cloud 
 
 RFID and fingerprint-based authentication used for secure warehouse entry.
 
-![RFID Entry](assets/images/rfid_entry.png)
-![Fingerprint Entry](assets/images/fingerprint_entry.png)
+<p align="center">
+  <img src="assets/images/rfid_entry.png" width="45%" />
+  <img src="assets/images/fingerprint_entry.png" width="45%" />
+</p>
 
 ---
 
@@ -157,8 +161,10 @@ RFID and fingerprint-based authentication used for secure warehouse entry.
 
 Physical implementation of the automated warehouse access system.
 
-![Prototype Front](assets/images/prototype_front_view.png)
-![Prototype Back](assets/images/prototype_back_view.png)
+<p align="center">
+  <img src="assets/images/prototype_front_view.png" width="45%" />
+  <img src="assets/images/prototype_back_view.png" width="45%" />
+</p>
 
 ---
 
@@ -166,8 +172,10 @@ Physical implementation of the automated warehouse access system.
 
 QR-based inventory system with real-time stock updates.
 
-![App Login](assets/images/app_login_screen.png)
-![App Screen](assets/images/app_withdrawal_screen.png)
+<p align="center">
+  <img src="assets/images/app_login_screen.png" width="45%" />
+  <img src="assets/images/app_withdrawal_screen.png" width="45%" />
+</p>
 
 ---
 
