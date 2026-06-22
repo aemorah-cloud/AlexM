@@ -128,6 +128,11 @@ The system integrates **IoT hardware + cloud software + automation mechanisms** 
 
 A visual demonstration of the IoT warehouse access and inventory control system, including hardware prototype, software application, and cloud integration.
 
+<p align="center">
+  <img src="assets/gif/simulation_RFID.gif" width="45%" />
+  <img src="assets/gif/simulation_fingerprint.gif" width="45%" />
+</p>
+
 ---
 
 ### 🧠 System Architecture
