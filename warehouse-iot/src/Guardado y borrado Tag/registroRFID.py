@@ -12,10 +12,10 @@ mylcd.lcd_clear()
 
 #Conexion a firebase
 config = {     
-  "apiKey": "AIzaSyAzUt1jt8hZwM-jeUbigoQwDJmGv7nb2lA",
-  "authDomain": "tesis-mora-moran.firebaseapp.com",
-  "databaseURL": "https://tesis-mora-moran-default-rtdb.firebaseio.com",
-  "storageBucket": "tesis-mora-moran.appspot.com"
+  "apiKey": "PII",
+  "authDomain": "PII",
+  "databaseURL": "PII",
+  "storageBucket": "PII"
 }
 
 mylcd.lcd_display_string("Inicializando ", 1, 0)
