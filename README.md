@@ -4,7 +4,7 @@
 
 Curious by nature, engineer by training, and data nerd by choice. I am a Mechatronics Engineer with a Master's in Big Data Analytics, passionate about combining engineering, software, data science, and automation to solve real-world problems.
 
-My work spans machine learning, business intelligence, process automation, robotics, IoT systems, and data-driven decision making. I love exploring how code, data, and technology can work together to create meaningful solutions—from NLP and analytics to automation and IoT. I enjoy building systems that bridge the gap between software and physical environments, transforming data into actionable insights and innovative applications.
+My work spans machine learning, business intelligence, process automation, robotics, IoT systems, and data driven decision making. I love exploring how code, data, and technology can work together to create meaningful solutions from NLP and analytics to automation and IoT. I enjoy building systems that bridge the gap between software and physical environments, transforming data into actionable insights and innovative applications.
 
 ## Technical Skills
 
@@ -37,12 +37,12 @@ Exploratory data analysis of traffic accident data in Guayaquil (Ecuador) to ide
 ➡️ [View Project](./traffic-analysis)
 
 ### 🚗 Used Car Price Prediction (Big Data & Machine Learning)
-End-to-end Big Data and Machine Learning project analyzing over 3 million vehicle records to predict used car prices with high accuracy. The solution combines data engineering, exploratory analysis, feature engineering, predictive modeling, and vehicle clustering to uncover market patterns and support data-driven pricing decisions.
+End to end Big Data and Machine Learning project analyzing over 3 million vehicle records to predict used car prices with high accuracy. The solution combines data engineering, exploratory analysis, feature engineering, predictive modeling, and vehicle clustering to uncover market patterns and support data driven pricing decisions.
 
 ➡️ [View Project](./used-car-price-prediction)
 
 ### 🌐 IoT-Based Warehouse Monitoring
-A conceptual IoT framework designed to simulate real-time warehouse monitoring through integrated sensor data flow, system architecture design, and cloud-based tracking. The system demonstrates how connected devices can enable automated visibility, traceability, and control of warehouse operations.
+A conceptual IoT framework designed to simulate real time warehouse monitoring through integrated sensor data flow, system architecture design, and cloud-based tracking. The system demonstrates how connected devices can enable automated visibility, traceability, and control of warehouse operations.
 
 ➡️ [View Project](./warehouse-iot)
 
