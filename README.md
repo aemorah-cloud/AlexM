@@ -42,7 +42,7 @@ End-to-end Big Data and Machine Learning project analyzing over 3 million vehicl
 ➡️ [View Project](./used-car-price-prediction)
 
 ### 🌐 IoT-Based Warehouse Monitoring
-Conceptual IoT system simulating real-time warehouse tracking using sensor data flow and system architecture design.
+A conceptual IoT framework designed to simulate real-time warehouse monitoring through integrated sensor data flow, system architecture design, and cloud-based tracking. The system demonstrates how connected devices can enable automated visibility, traceability, and control of warehouse operations.
 
 ➡️ [View Project](./warehouse-iot)
 
