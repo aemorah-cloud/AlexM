@@ -10,6 +10,7 @@ API_KEY = os.getenv("WEATHER_API_KEY")
 CITY = "Toronto"
 
 url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
+print("Fetching weather data for:", CITY)
 
 response = requests.get(url)
 
