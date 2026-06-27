@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("Weather Dashboard is running!")
+    return render(request, "dashboard/home.html")
