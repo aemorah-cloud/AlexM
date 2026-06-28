@@ -20,28 +20,68 @@ def run_query(query):
         ResultConfiguration={"OutputLocation": OUTPUT}
     )
 
-    query_id = response["QueryExecutionId"]
+    query_execution_id = response["QueryExecutionId"]
 
-    # Wait for completion
+    # WAIT for completion
     while True:
-        result = athena.get_query_execution(QueryExecutionId=query_id)
+        result = athena.get_query_execution(QueryExecutionId=query_execution_id)
         state = result["QueryExecution"]["Status"]["State"]
 
         if state in ["SUCCEEDED", "FAILED", "CANCELLED"]:
             break
+
         time.sleep(1)
 
     if state != "SUCCEEDED":
-        raise Exception("Athena query failed")
+        raise Exception(f"Athena query failed: {state}")
 
-    results = athena.get_query_results(QueryExecutionId=query_id)
+    return query_execution_id
 
-    rows = results["ResultSet"]["Rows"]
+def fetch_results(query_execution_id):
+    result = athena.get_query_results(QueryExecutionId=query_execution_id)
 
-    # Convert to readable format
-    data = [row["Data"] for row in rows[1:]]
+    rows = result["ResultSet"]["Rows"]
+
+    # safe header extraction
+    headers = [col.get("VarCharValue", "") for col in rows[0]["Data"]]
+
+    data = []
+
+    for row in rows[1:]:
+        values = row.get("Data", [])
+
+        record = {}
+
+        for i, col in enumerate(values):
+            record[headers[i]] = col.get("VarCharValue")
+
+        data.append(record)
 
     return data
+
+def format_weather(data):
+    latest = data[0]
+
+    history = [
+        {
+            "timestamp": d.get("timestamp"),
+            "temperature": float(d.get("temperature", 0))
+        }
+        for d in data[1:10]
+    ]
+
+    return {
+        "latest": {
+            "city": latest.get("city"),
+            "temperature": float(latest.get("temperature", 0)),
+            "humidity": float(latest.get("humidity", 0)),
+            "weather": latest.get("weather"),
+            "description": latest.get("description"),
+            "timestamp": latest.get("timestamp")
+        },
+        "history": history
+    }
+
 
 
 def get_latest_weather():
@@ -49,7 +89,9 @@ def get_latest_weather():
     SELECT *
     FROM {TABLE}
     ORDER BY timestamp DESC
-    LIMIT 20;
     """
 
-    return run_query(query)
+    qid = run_query(query)
+    data = fetch_results(qid)
+
+    return format_weather(data)
