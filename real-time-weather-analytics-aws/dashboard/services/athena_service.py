@@ -17,7 +17,7 @@ OUTPUT  = os.getenv("ATHENA_OUTPUT")
 athena = boto3.client("athena", region_name="us-east-2")
 
 
-def run_query(query):
+def run_query(query: str) -> str:
     response = athena.start_query_execution(
         QueryString=query,
         QueryExecutionContext={"Database": DATABASE},
@@ -41,7 +41,7 @@ def run_query(query):
 
     return query_execution_id
 
-def fetch_results(query_execution_id):
+def fetch_results(query_execution_id: str) -> list:
     result = athena.get_query_results(QueryExecutionId=query_execution_id)
 
     rows = result["ResultSet"]["Rows"]
@@ -63,7 +63,7 @@ def fetch_results(query_execution_id):
 
     return data
 
-def format_weather(data):
+def format_weather(rows: list) -> dict:
     latest = data[0]
 
     history = [
@@ -88,7 +88,7 @@ def format_weather(data):
 
 
 
-def get_latest_weather():
+def get_latest_weather() -> dict:
     query = LATEST_WEATHER_QUERY
 
     qid = run_query(query)
