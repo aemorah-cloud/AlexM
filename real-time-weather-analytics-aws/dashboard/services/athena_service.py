@@ -9,7 +9,6 @@ from .sql_queries import (
 )
 
 from dashboard.config import ATHENA_DATABASE as DATABASE, ATHENA_TABLE as TABLE, ATHENA_OUTPUT as OUTPUT
-
 athena = boto3.client("athena", region_name="us-east-2")
 
 
@@ -60,6 +59,11 @@ def fetch_results(query_execution_id: str) -> list:
     return data
 
 def format_weather(rows: list) -> dict:
+    if not rows:
+        return {
+            "latest": {},
+            "history": []
+        }
     latest = rows[0]
 
     history = [
