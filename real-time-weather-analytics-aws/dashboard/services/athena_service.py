@@ -8,11 +8,7 @@ from .sql_queries import (
     HISTORY_QUERY,
 )
 
-load_dotenv()
-
-DATABASE  = os.getenv("ATHENA_DATABASE")
-TABLE  = os.getenv("ATHENA_TABLE")
-OUTPUT  = os.getenv("ATHENA_OUTPUT")
+from dashboard.config import ATHENA_DATABASE as DATABASE, ATHENA_TABLE as TABLE, ATHENA_OUTPUT as OUTPUT
 
 athena = boto3.client("athena", region_name="us-east-2")
 
@@ -64,14 +60,14 @@ def fetch_results(query_execution_id: str) -> list:
     return data
 
 def format_weather(rows: list) -> dict:
-    latest = data[0]
+    latest = rows[0]
 
     history = [
         {
             "timestamp": d.get("timestamp"),
             "temperature": float(d.get("temperature", 0))
         }
-        for d in data[1:10]
+        for d in rows[1:10]
     ]
 
     return {
