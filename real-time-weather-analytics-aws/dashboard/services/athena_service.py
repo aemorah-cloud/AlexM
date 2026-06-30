@@ -3,6 +3,10 @@ import pandas as pd
 import time
 import os
 from dotenv import load_dotenv
+from .sql_queries import (
+    LATEST_WEATHER_QUERY,
+    HISTORY_QUERY,
+)
 
 load_dotenv()
 
@@ -85,11 +89,7 @@ def format_weather(data):
 
 
 def get_latest_weather():
-    query = f"""
-    SELECT *
-    FROM {TABLE}
-    ORDER BY timestamp DESC
-    """
+    query = LATEST_WEATHER_QUERY
 
     qid = run_query(query)
     data = fetch_results(qid)
