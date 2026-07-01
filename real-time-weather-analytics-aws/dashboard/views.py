@@ -5,5 +5,9 @@ from django.http import JsonResponse
 
 
 def home(request):
-    data = get_latest_weather()
-    return JsonResponse(data)
+    return render(request, "dashboard/index.html")
+
+
+def weather_api(request):
+    weather = get_latest_weather()
+    return JsonResponse(weather)
