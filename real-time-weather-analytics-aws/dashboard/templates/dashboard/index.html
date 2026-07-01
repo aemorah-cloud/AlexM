@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html>
+<body style="font-family: Arial; background: #0f172a; color: white;">
 
-<head>
-    <title>Weather Analytics Dashboard</title>
-</head>
+<h1 style="text-align:center;">Weather Analytics Dashboard</h1>
 
-<body>
+<div id="weather-container" style="max-width:600px;margin:auto;margin-top:40px;"> Loading weather... </div>
 
-    <h1>Weather Analytics Dashboard</h1>
+<script>
 
-    <div id="weather-container">
-        Loading weather...
-    </div>
+async function loadWeather() {
 
-    <script>
+    const response = await fetch("/api/weather/");
+    const data = await response.json();
 
-        async function loadWeather() {
+    const latest = data.latest;
 
-            const response = await fetch("/api/weather/");
-            const data = await response.json();
+    document.getElementById("weather-container").innerHTML = `
 
-            const latest = data.latest;
+        <div style="
+            background:#1e293b;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 10px 20px rgba(0,0,0,0.3);
+        ">
 
-            document.getElementById("weather-container").innerHTML = `
-                <h2>${latest.city}</h2>
+            <h2>${latest.city}</h2>
 
-                <p><strong>Temperature:</strong> ${latest.temperature} °C</p>
+            <h1 style="font-size:48px;">
+                ${latest.temperature}°C
+            </h1>
 
-                <p><strong>Humidity:</strong> ${latest.humidity}%</p>
+            <p>🌥️ ${latest.weather}</p>
 
-                <p><strong>Weather:</strong> ${latest.weather}</p>
+            <hr>
 
-                <p><strong>Description:</strong> ${latest.description}</p>
+            <p>Humidity: ${latest.humidity}%</p>
+            <p>Description: ${latest.description}</p>
+            <p>Time: ${latest.timestamp}</p>
 
-                <p><strong>Timestamp:</strong> ${latest.timestamp}</p>
-            `;
+        </div>
 
-        }
+    `;
+}
 
-        loadWeather();
+loadWeather();
 
-    </script>
+</script>
 
 </body>
-
-</html>
