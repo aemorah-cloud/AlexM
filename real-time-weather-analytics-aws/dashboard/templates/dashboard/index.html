@@ -2,9 +2,7 @@
 <html>
 
 <head>
-
     <title>Weather Analytics Dashboard</title>
-
 </head>
 
 <body>
@@ -12,8 +10,37 @@
     <h1>Weather Analytics Dashboard</h1>
 
     <div id="weather-container">
-
+        Loading weather...
     </div>
+
+    <script>
+
+        async function loadWeather() {
+
+            const response = await fetch("/api/weather/");
+            const data = await response.json();
+
+            const latest = data.latest;
+
+            document.getElementById("weather-container").innerHTML = `
+                <h2>${latest.city}</h2>
+
+                <p><strong>Temperature:</strong> ${latest.temperature} °C</p>
+
+                <p><strong>Humidity:</strong> ${latest.humidity}%</p>
+
+                <p><strong>Weather:</strong> ${latest.weather}</p>
+
+                <p><strong>Description:</strong> ${latest.description}</p>
+
+                <p><strong>Timestamp:</strong> ${latest.timestamp}</p>
+            `;
+
+        }
+
+        loadWeather();
+
+    </script>
 
 </body>
 
