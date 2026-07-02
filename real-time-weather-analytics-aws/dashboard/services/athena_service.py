@@ -89,7 +89,7 @@ def format_weather(rows: list) -> dict:
 
 
 def get_latest_weather() -> dict:
-    query = LATEST_WEATHER_QUERY
+    query = HISTORY_QUERY
 
     qid = run_query(query)
     data = fetch_results(qid)

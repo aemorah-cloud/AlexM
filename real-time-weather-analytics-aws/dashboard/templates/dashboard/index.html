@@ -1,9 +1,27 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Weather Analytics Dashboard</title>
+
+    <!-- Chart.js (we will use next step) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
 <body style="font-family: Arial; background: #0f172a; color: white;">
 
 <h1 style="text-align:center;">Weather Analytics Dashboard</h1>
 
-<div id="weather-container" style="max-width:600px;margin:auto;margin-top:40px;"> Loading weather... </div>
+<div id="weather-container" style="max-width:600px;margin:auto;margin-top:40px;">
+    Loading weather...
+</div>
+
+<div style="max-width:700px;margin:50px auto;">
+    <canvas id="tempChart"></canvas>
+</div>
+
 
 <script>
 
@@ -13,6 +31,11 @@ async function loadWeather() {
     const data = await response.json();
 
     const latest = data.latest;
+    const history = data.history;
+    
+    // ------------------------
+    // WEATHER CARD
+    // ------------------------
 
     document.getElementById("weather-container").innerHTML = `
 
@@ -40,10 +63,38 @@ async function loadWeather() {
         </div>
 
     `;
+
+    // ------------------------
+    // CHART DATA
+    // ------------------------
+    const labels = history.map(item => item.timestamp);
+    const temps = history.map(item => item.temperature);
+
+    const ctx = document.getElementById('tempChart');
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Temperature (°C)',
+                data: temps,
+                borderColor: 'blue',
+                tension: 0.3
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+    
 }
 
 loadWeather();
 
 </script>
 
+
 </body>
+
+</html>
